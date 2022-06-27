@@ -1,0 +1,14 @@
+datasource db {
+  provider = "postgresql"
+  // testing db, might be removed in the future
+  url      = "postgresql://postgres:TyadfseGadaphqlTe@db.kkkmbdglcsztklsxwmot.supabase.co:5432/postgres"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "./generated/type-graphql"
+}
